@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bahnschrift';
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+    background-color: aqua;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message-sender {
+    background-color: cadetblue;
+    padding: 5px 10px;
+    width: fit-content;
+    margin: 5px 0;
+    border-radius: 0 5px 5px;
+    align-self: flex-end;
+}
+
+.message-receiver {
+    background-color: chartreuse;
+    padding: 5px 10px;
+    width: fit-content;
+    margin: 5px 0;
+    border-radius: 0 5px 5px;
+    align-self: flex-start;
+}
+
+.message-container,
+.room-container {
+    height: 5vh;
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    gap: 10px;
+}
+
+.label,
+.button {
+    flex: 2;
+}
+
+.input {
+    flex: 10;
+    outline: none;
+    font-size: 20px;
+}
