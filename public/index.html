@@ -12,16 +12,16 @@
   <div class="main-container">
     <div class="chat-container">
     </div>
-    <div class="message-container">
+    <form id="message-form" class="message-container">
       <span class="label">Message:</span>
-      <input id="message" class="input" type="text" />
-      <button id="submitBtn" class="button" onClick={createMessage}> Send </button>
-    </div>
-    <div class="room-container">
+      <input id="message" class="input" type="text" autocomplete="off" />
+      <input type="submit" class="button" value="Send" />
+    </form>
+    <form id="room-form" class="room-container">
       <span class="label">Room:</span>
-      <input id="join" class="input" type="text" />
-      <button id="joinBtn" class="button">Join</button>
-    </div>
+      <input id="join" class="input" type="text" autocomplete="off" />
+      <input type="submit" class="button" value="Join" />
+    </form>
   </div>
   <script src="/socket.io/socket.io.js"></script>
   <script type="module" src="/index.js"></script>
